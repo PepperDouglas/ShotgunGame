@@ -8,10 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ShotgunGame {
-    public partial class FrmGameArea : Form {
+namespace ShotgunGame
+{
+    public partial class FrmGameArea : Form
+    {
         public FrmGameArea() {
             InitializeComponent();
         }
+
+
     }
 }
