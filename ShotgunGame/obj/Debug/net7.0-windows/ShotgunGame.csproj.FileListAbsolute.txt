@@ -1,0 +1,16 @@
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.exe
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.deps.json
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.runtimeconfig.json
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.dll
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.pdb
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.FrmGameArea.resources
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.csproj.GenerateResource.cache
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.AssemblyInfoInputs.cache
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.AssemblyInfo.cs
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.csproj.CoreCompileInputs.cache
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.dll
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\refint\ShotgunGame.dll
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.pdb
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.genruntimeconfig.cache
+C:\Users\Douglas\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ref\ShotgunGame.dll
