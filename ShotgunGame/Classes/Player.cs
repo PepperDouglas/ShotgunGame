@@ -11,16 +11,25 @@ namespace ShotgunGame.Classes
         public int Bullets { get; set; }
         public string ActionOption { get; set; }
         public bool ShotgunAvailable { get; set; }
+        public string PreviousAction { get; set; }
 
-        public Player(int bullets, string actionOption, bool shotgunAvailable) {
+        public Player(int bullets, string actionOption, bool shotgunAvailable, string previousAction) {
             Bullets = bullets;
             ActionOption = actionOption;
             ShotgunAvailable = shotgunAvailable;
+            PreviousAction = previousAction;
         }
 
         public bool IsShotgunAvailable() {
             //temp
             return true;
+        }
+        public void UpdateBullets(int bulletChange) {
+            Bullets += bulletChange;
+        }
+
+        public void DecreaseBullets() {
+            Bullets -= 1;
         }
     }
 }
