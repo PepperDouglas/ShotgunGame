@@ -4,5 +4,8 @@
     <Compile Update="Forms\FrmGameArea.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FrmReplaySelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -25,191 +25,235 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            groupBox1 = new GroupBox();
-            groupBox2 = new GroupBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            groupBox3 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            groupBoxUser = new GroupBox();
+            labelUserBulletsCounter = new Label();
+            labelUserBullets = new Label();
+            buttonShotgun = new Button();
+            buttonShoot = new Button();
+            buttonBlock = new Button();
+            buttonReload = new Button();
+            groupBoxAIUser = new GroupBox();
+            labelAIUserBulletsCounter = new Label();
+            labelAIUserBullets = new Label();
+            groupBoxPreviousActions = new GroupBox();
+            labelAIUserPreviousAction = new Label();
+            labelUserPreviousAction = new Label();
+            labelWinsLosses = new Label();
+            labelWins = new Label();
+            labelLosses = new Label();
+            groupBoxUser.SuspendLayout();
+            groupBoxAIUser.SuspendLayout();
+            groupBoxPreviousActions.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxUser
             // 
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(button4);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Location = new Point(49, 35);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(275, 263);
-            groupBox1.TabIndex = 1;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "The Player, aka you";
+            groupBoxUser.Controls.Add(labelUserBulletsCounter);
+            groupBoxUser.Controls.Add(labelUserBullets);
+            groupBoxUser.Controls.Add(buttonShotgun);
+            groupBoxUser.Controls.Add(buttonShoot);
+            groupBoxUser.Controls.Add(buttonBlock);
+            groupBoxUser.Controls.Add(buttonReload);
+            groupBoxUser.Location = new Point(49, 35);
+            groupBoxUser.Name = "groupBoxUser";
+            groupBoxUser.Size = new Size(275, 263);
+            groupBoxUser.TabIndex = 1;
+            groupBoxUser.TabStop = false;
+            groupBoxUser.Text = "The Player, aka you";
             // 
-            // groupBox2
+            // labelUserBulletsCounter
             // 
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Location = new Point(480, 35);
-            groupBox2.Name = "groupBox2";
-            groupBox2.RightToLeft = RightToLeft.No;
-            groupBox2.Size = new Size(275, 263);
-            groupBox2.TabIndex = 2;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "AI Player";
+            labelUserBulletsCounter.AutoSize = true;
+            labelUserBulletsCounter.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserBulletsCounter.Location = new Point(155, 52);
+            labelUserBulletsCounter.Name = "labelUserBulletsCounter";
+            labelUserBulletsCounter.Size = new Size(27, 32);
+            labelUserBulletsCounter.TabIndex = 5;
+            labelUserBulletsCounter.Text = "0";
             // 
-            // button1
+            // labelUserBullets
             // 
-            button1.Location = new Point(27, 137);
-            button1.Name = "button1";
-            button1.Size = new Size(93, 37);
-            button1.TabIndex = 0;
-            button1.Text = "RELOAD";
-            button1.UseVisualStyleBackColor = true;
+            labelUserBullets.AutoSize = true;
+            labelUserBullets.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserBullets.Location = new Point(61, 52);
+            labelUserBullets.Name = "labelUserBullets";
+            labelUserBullets.Size = new Size(90, 32);
+            labelUserBullets.TabIndex = 4;
+            labelUserBullets.Text = "Bullets:";
             // 
-            // button2
+            // buttonShotgun
             // 
-            button2.Location = new Point(155, 137);
-            button2.Name = "button2";
-            button2.Size = new Size(91, 37);
-            button2.TabIndex = 1;
-            button2.Text = "BLOCK";
-            button2.UseVisualStyleBackColor = true;
+            buttonShotgun.Location = new Point(155, 194);
+            buttonShotgun.Name = "buttonShotgun";
+            buttonShotgun.Size = new Size(91, 37);
+            buttonShotgun.TabIndex = 3;
+            buttonShotgun.Text = "SHOTGUN";
+            buttonShotgun.UseVisualStyleBackColor = true;
+            buttonShotgun.Click += ButtonClick;
             // 
-            // button3
+            // buttonShoot
             // 
-            button3.Location = new Point(27, 194);
-            button3.Name = "button3";
-            button3.Size = new Size(95, 37);
-            button3.TabIndex = 2;
-            button3.Text = "SHOOT";
-            button3.UseVisualStyleBackColor = true;
+            buttonShoot.Location = new Point(27, 194);
+            buttonShoot.Name = "buttonShoot";
+            buttonShoot.Size = new Size(95, 37);
+            buttonShoot.TabIndex = 2;
+            buttonShoot.Text = "SHOOT";
+            buttonShoot.UseVisualStyleBackColor = true;
+            buttonShoot.Click += ButtonClick;
             // 
-            // button4
+            // buttonBlock
             // 
-            button4.Location = new Point(155, 194);
-            button4.Name = "button4";
-            button4.Size = new Size(91, 37);
-            button4.TabIndex = 3;
-            button4.Text = "SHOTGUN";
-            button4.UseVisualStyleBackColor = true;
+            buttonBlock.Location = new Point(155, 137);
+            buttonBlock.Name = "buttonBlock";
+            buttonBlock.Size = new Size(91, 37);
+            buttonBlock.TabIndex = 1;
+            buttonBlock.Text = "BLOCK";
+            buttonBlock.UseVisualStyleBackColor = true;
+            buttonBlock.Click += ButtonClick;
             // 
-            // groupBox3
+            // buttonReload
             // 
-            groupBox3.Controls.Add(label2);
-            groupBox3.Controls.Add(label1);
-            groupBox3.Location = new Point(204, 325);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(400, 100);
-            groupBox3.TabIndex = 3;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Previous Actions";
+            buttonReload.Location = new Point(27, 137);
+            buttonReload.Name = "buttonReload";
+            buttonReload.Size = new Size(93, 37);
+            buttonReload.TabIndex = 0;
+            buttonReload.Text = "RELOAD";
+            buttonReload.UseVisualStyleBackColor = true;
+            buttonReload.Click += ButtonClick;
             // 
-            // label1
+            // groupBoxAIUser
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(68, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(80, 32);
-            label1.TabIndex = 0;
-            label1.Text = "NONE";
+            groupBoxAIUser.Controls.Add(labelAIUserBulletsCounter);
+            groupBoxAIUser.Controls.Add(labelAIUserBullets);
+            groupBoxAIUser.Location = new Point(480, 35);
+            groupBoxAIUser.Name = "groupBoxAIUser";
+            groupBoxAIUser.RightToLeft = RightToLeft.No;
+            groupBoxAIUser.Size = new Size(275, 263);
+            groupBoxAIUser.TabIndex = 2;
+            groupBoxAIUser.TabStop = false;
+            groupBoxAIUser.Text = "AI Player";
             // 
-            // label2
+            // labelAIUserBulletsCounter
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(254, 43);
-            label2.Name = "label2";
-            label2.Size = new Size(80, 32);
-            label2.TabIndex = 1;
-            label2.Text = "NONE";
+            labelAIUserBulletsCounter.AutoSize = true;
+            labelAIUserBulletsCounter.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelAIUserBulletsCounter.Location = new Point(167, 70);
+            labelAIUserBulletsCounter.Name = "labelAIUserBulletsCounter";
+            labelAIUserBulletsCounter.Size = new Size(27, 32);
+            labelAIUserBulletsCounter.TabIndex = 1;
+            labelAIUserBulletsCounter.Text = "0";
             // 
-            // label3
+            // labelAIUserBullets
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(61, 52);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 32);
-            label3.TabIndex = 4;
-            label3.Text = "Bullets:";
+            labelAIUserBullets.AutoSize = true;
+            labelAIUserBullets.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelAIUserBullets.Location = new Point(71, 70);
+            labelAIUserBullets.Name = "labelAIUserBullets";
+            labelAIUserBullets.Size = new Size(90, 32);
+            labelAIUserBullets.TabIndex = 0;
+            labelAIUserBullets.Text = "Bullets:";
             // 
-            // label4
+            // groupBoxPreviousActions
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(155, 52);
-            label4.Name = "label4";
-            label4.Size = new Size(27, 32);
-            label4.TabIndex = 5;
-            label4.Text = "0";
+            groupBoxPreviousActions.Controls.Add(labelAIUserPreviousAction);
+            groupBoxPreviousActions.Controls.Add(labelUserPreviousAction);
+            groupBoxPreviousActions.Location = new Point(204, 325);
+            groupBoxPreviousActions.Name = "groupBoxPreviousActions";
+            groupBoxPreviousActions.Size = new Size(400, 100);
+            groupBoxPreviousActions.TabIndex = 3;
+            groupBoxPreviousActions.TabStop = false;
+            groupBoxPreviousActions.Text = "Previous Actions";
             // 
-            // label5
+            // labelAIUserPreviousAction
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(71, 70);
-            label5.Name = "label5";
-            label5.Size = new Size(90, 32);
-            label5.TabIndex = 0;
-            label5.Text = "Bullets:";
+            labelAIUserPreviousAction.AutoSize = true;
+            labelAIUserPreviousAction.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelAIUserPreviousAction.Location = new Point(254, 43);
+            labelAIUserPreviousAction.Name = "labelAIUserPreviousAction";
+            labelAIUserPreviousAction.Size = new Size(80, 32);
+            labelAIUserPreviousAction.TabIndex = 1;
+            labelAIUserPreviousAction.Text = "NONE";
             // 
-            // label6
+            // labelUserPreviousAction
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(167, 70);
-            label6.Name = "label6";
-            label6.Size = new Size(27, 32);
-            label6.TabIndex = 1;
-            label6.Text = "0";
+            labelUserPreviousAction.AutoSize = true;
+            labelUserPreviousAction.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            labelUserPreviousAction.Location = new Point(68, 43);
+            labelUserPreviousAction.Name = "labelUserPreviousAction";
+            labelUserPreviousAction.Size = new Size(80, 32);
+            labelUserPreviousAction.TabIndex = 0;
+            labelUserPreviousAction.Text = "NONE";
+            // 
+            // labelWinsLosses
+            // 
+            labelWinsLosses.AutoSize = true;
+            labelWinsLosses.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            labelWinsLosses.Location = new Point(340, 59);
+            labelWinsLosses.Name = "labelWinsLosses";
+            labelWinsLosses.Size = new Size(125, 25);
+            labelWinsLosses.TabIndex = 4;
+            labelWinsLosses.Text = "Wins / Losses";
+            // 
+            // labelWins
+            // 
+            labelWins.AutoSize = true;
+            labelWins.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelWins.Location = new Point(359, 96);
+            labelWins.Name = "labelWins";
+            labelWins.Size = new Size(19, 21);
+            labelWins.TabIndex = 5;
+            labelWins.Text = "0";
+            // 
+            // labelLosses
+            // 
+            labelLosses.AutoSize = true;
+            labelLosses.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            labelLosses.Location = new Point(422, 96);
+            labelLosses.Name = "labelLosses";
+            labelLosses.Size = new Size(19, 21);
+            labelLosses.TabIndex = 6;
+            labelLosses.Text = "0";
             // 
             // FrmGameArea
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(labelLosses);
+            Controls.Add(labelWins);
+            Controls.Add(labelWinsLosses);
+            Controls.Add(groupBoxPreviousActions);
+            Controls.Add(groupBoxAIUser);
+            Controls.Add(groupBoxUser);
             Name = "FrmGameArea";
             Text = "FrmGameArea";
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
+            groupBoxUser.ResumeLayout(false);
+            groupBoxUser.PerformLayout();
+            groupBoxAIUser.ResumeLayout(false);
+            groupBoxAIUser.PerformLayout();
+            groupBoxPreviousActions.ResumeLayout(false);
+            groupBoxPreviousActions.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private GroupBox groupBox2;
-        private Label label4;
-        private Label label3;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Label label6;
-        private Label label5;
-        private GroupBox groupBox3;
-        private Label label2;
-        private Label label1;
+        private GroupBox groupBoxUser;
+        private GroupBox groupBoxAIUser;
+        private Label labelUserBulletsCounter;
+        private Label labelUserBullets;
+        private Button buttonShotgun;
+        private Button buttonShoot;
+        private Button buttonBlock;
+        private Button buttonReload;
+        private Label labelAIUserBulletsCounter;
+        private Label labelAIUserBullets;
+        private GroupBox groupBoxPreviousActions;
+        private Label labelAIUserPreviousAction;
+        private Label labelUserPreviousAction;
+        private Label labelWinsLosses;
+        private Label labelWins;
+        private Label labelLosses;
     }
 }

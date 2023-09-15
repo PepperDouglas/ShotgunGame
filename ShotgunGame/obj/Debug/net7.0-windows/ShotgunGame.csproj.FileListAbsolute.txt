@@ -24,3 +24,11 @@ C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\Sho
 C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.dll
 C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\refint\ShotgunGame.dll
 C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.pdb
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.exe
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.deps.json
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.runtimeconfig.json
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.dll
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\bin\Debug\net7.0-windows\ShotgunGame.pdb
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.genruntimeconfig.cache
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ref\ShotgunGame.dll
+C:\Users\46707\source\repos\ShotgunGame\ShotgunGame\obj\Debug\net7.0-windows\ShotgunGame.Forms.FrmReplaySelection.resources
